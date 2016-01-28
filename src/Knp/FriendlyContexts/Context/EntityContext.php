@@ -216,7 +216,7 @@ class EntityContext extends Context
     {
         $diff = [];
         foreach ($a1 as $e) {
-            if (!in_array($e, $a2)) {
+            if (!in_array($e, $a2, true)) {
                 $diff[] = $e;
             }
         }
